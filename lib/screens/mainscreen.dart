@@ -22,6 +22,24 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text("MainFoodPage"),
             ),
+            SizedBox(
+              height: 30,
+            ),
+            TextButton(
+              onPressed: () {
+                Get.toNamed("/cartPage");
+              },
+              child: Text("Cart Page"),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            TextButton(
+              onPressed: () {
+                Get.toNamed("/accountPage");
+              },
+              child: Text("Account Page"),
+            ),
           ],
         ),
       ),

@@ -19,4 +19,13 @@ var routes = [
     binding: ProductDetailPageBinding(),
     page: () => RecommendedFoodDetails(),
   ),
+  GetPage(
+    name: '/cartPage',
+    binding: ProductDetailPageBinding(),
+    page: () => CartPage(),
+  ),
+  GetPage(
+    name: '/accountPage',
+    page: () => AccountPage(),
+  ),
 ];
