@@ -1,5 +1,4 @@
 import 'package:fastfood_app/controllers/controllers.dart';
-import 'package:fastfood_app/utils/colors.dart';
 import 'package:fastfood_app/utils/utils.dart';
 import 'package:fastfood_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,7 @@ class PopularFoodDetails extends GetView<ProductDetailsPageController> {
               child: Container(
                 width: double.maxFinite,
                 height: Dimensions.popularFoodImgSize,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   image: DecorationImage(
                     fit: BoxFit.cover,
                     image: AssetImage("assets/images/f6.png"),

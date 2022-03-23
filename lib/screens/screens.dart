@@ -6,3 +6,5 @@ export 'food/popular_food_details.dart';
 export 'food/recommended_food_page.dart';
 export 'cart_page.dart';
 export 'account/account_page.dart';
+export 'account/signup_page.dart';
+export 'account/signin_page.dart';

@@ -1,17 +1,19 @@
+import 'package:fastfood_app/AdminApp/screens/Products/products_menu.dart';
+import 'package:fastfood_app/AdminApp/screens/account.dart';
+import 'package:fastfood_app/AdminApp/screens/dashboard.dart';
 import 'package:fastfood_app/screens/screens.dart';
-import 'package:fastfood_app/widgets/widgets.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers/controllers.dart';
-import '../utils/colors.dart';
+import '../../controllers/controllers.dart';
+import '../../utils/colors.dart';
 
-class HomeScreen extends StatelessWidget {
-  HomeScreen({Key? key}) : super(key: key);
+class AdminMainScreen extends StatelessWidget {
+  AdminMainScreen({Key? key}) : super(key: key);
   var pages = [
-    const MainFoodPage(),
-    const CartPage(),
-    const AccountPage(),
+    const Dashboard(),
+    const ProductsMenu(),
+    const AccountManagement(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -31,12 +33,12 @@ class HomeScreen extends StatelessWidget {
                   icon: Icon(logic.currentIndex.value == 0
                       ? Icons.dashboard_customize
                       : Icons.dashboard_customize_outlined),
-                  label: "Home"),
+                  label: "Dashboard"),
               BottomNavigationBarItem(
                   icon: Icon(logic.currentIndex.value == 1
-                      ? Icons.shopping_cart_rounded
-                      : Icons.shopping_cart_outlined),
-                  label: "Cart"),
+                      ? Icons.add_to_queue_rounded
+                      : Icons.add_to_queue_sharp),
+                  label: "Products"),
               BottomNavigationBarItem(
                   icon: Icon(logic.currentIndex.value == 2
                       ? Icons.account_circle_rounded

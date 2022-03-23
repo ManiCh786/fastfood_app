@@ -1,6 +1,8 @@
 import 'package:fastfood_app/utils/utils.dart';
 import 'package:fastfood_app/widgets/big_text.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../widgets/widgets.dart';
 
@@ -10,6 +12,7 @@ class AccountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
       appBar: AppBar(
         backgroundColor: AppColors.mainColor,
         centerTitle: true,
@@ -112,6 +115,7 @@ class AccountPage extends StatelessWidget {
                         text: "Coming Soon",
                       ),
                     ),
+                    SizedBox(height: Dimensions.height20 * 2),
                   ],
                 ),
               ),

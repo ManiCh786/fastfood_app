@@ -5,6 +5,12 @@ class ProductDetailPageBinding implements Bindings {
   @override
   void dependencies() {
     // TODO: implement dependencies
-    Get.lazyPut(() => ProductDetailsPageController());
+    Get.put<ProductDetailsPageController>(
+      ProductDetailsPageController(),
+      permanent: true,
+    );
+    // Get.lazyPut(
+    //   () => ProductDetailsPageController(),
+    // );
   }
 }
